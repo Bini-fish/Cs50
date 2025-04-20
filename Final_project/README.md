@@ -38,7 +38,7 @@ For the project to work properly you need to have `NOTION_API_KEY = "Your Notion
 
 3. Make sure the names of the rows are as below (`Case-sensitive`):
 
-   ![An image of the header rows](https://ibb.co/5vRwHD7)
+   ![An image of the header rows](https://i.ibb.co/K7rSvZ1/progress-tracker.png)
 
    **| Client's Name | Contact Info | Photo Shoot Appointment | Completed | Date Published | URL |**
 
@@ -46,13 +46,13 @@ For the project to work properly you need to have `NOTION_API_KEY = "Your Notion
 
 ### main()
 
-![Main function](https://ibb.co/mCMZqCy)
+![Main function](https://i.ibb.co/SX9YnXm/main-func.png)
 
 When the `main()` function is excuted it displays the list of options, if the user enters the values (1-5) the program proceeds to the menu function.
 
 ### menu(int: option)
 
-![menu](https://ibb.co/DCQtx12)
+![menu](https://i.ibb.co/fpH2hXw/menu.png)
 
 The `menu(option)` function acts as a bus terminal controling **what function should be excuted next** according to the input.
 
@@ -60,19 +60,19 @@ The `menu(option)` function acts as a bus terminal controling **what function sh
 
 ### get_client()
 
-![get_client](https://ibb.co/thDDj0b)
+![get_client](https://i.ibb.co/QcMMSW6/get-client.png)
 
-This function fetchs the data from our `Notion database` and returns a dictionary where we use this dictionary as an input to our format_client() functioin.
+This function fetchs the data from our `Notion database` and returns a dictionary where we use this dictionary as an input to our format_client() function.
 
 ### format_client(dict: data)
 
-![format_client](https://ibb.co/Cv14jGR)
+![format_client](https://i.ibb.co/Xp26nRc/format-clients.png)
 
 This function takes dictionary as an input and uses the `tabulate` library to format our dictionary (matching the rows and columns in our Notion database).
 
 ### add_client(dict: data)
 
-![add_client](https://ibb.co/fDqkbxS)
+![add_client](https://i.ibb.co/6XrH2WZ/add-client.png)
 
 This function checks if our dictionary is in the proper format to be added (posted) to our notion database, then proceeds to add it.
 
@@ -82,7 +82,7 @@ This function checks weather the **change** we want to make to the database is i
 
 ### remove_client()
 
-![remove_client](https://ibb.co/r7K6Qm8)
+![remove_client](https://i.ibb.co/ngqcwbd/remove-client.png)
 
 This function checks weather the `name of the client` we want to remove is correct (exists), then proceeds to remove it from our database.
 
